@@ -64,7 +64,7 @@ struct Annotated(T) {
         }
 
         ///
-        bool opEquals(scope const Annotated rhs) scope const
+        bool opEquals(scope const Annotated rhs) scope const pure nothrow @nogc
         {
             return annotations == rhs.annotations && value == rhs.value;
         }
@@ -216,7 +216,7 @@ struct AnnotatedOnce(T) {
         }
 
         ///
-        bool opEquals(scope const AnnotatedOnce rhs) scope const
+        bool opEquals(scope const AnnotatedOnce rhs) scope const pure nothrow @nogc
         {
             return annotation == rhs.annotation && value == rhs.value;
         }

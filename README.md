@@ -11,6 +11,9 @@
 Mir Algorithm
 =============
 
+Fixed version for a specific task (using with asdf). Working with 'dub build --combined'.
+However this fix is not for general usage. Original version is not building with '--combined' flag because of compiler bug.
+
 #### [API Documentation](http://mir-algorithm.libmir.org)
 
 #### Blogs
